@@ -14,6 +14,8 @@ book2 = tk.Label(root, text="Last Name").grid(row=1)
 
 def myfunc():
     print("First name: %s\n Last Name: %s" % (b1.get(), b2.get()))
+    b1.delete(0, tk.END)
+    b2.delete(0, tk.END)
 b1 = tk.Entry(root)
 b2 = tk.Entry(root)
 b1.grid(row=0, column=1)
